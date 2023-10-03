@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecasting</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+</head>
+<body>
+<h1 style="color: white;text-align: center;">Forecasted price for year {{year}}</h1>
+<br><br>
+
+<table>
+    <thead>
+        <tr>
+            <th>Period</th>
+            <th>Montly Sales of perrin</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>January</td>
+            <td>{{sales.1}}</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>{{sales.2}}</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>{{sales.3}}</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>{{sales.4}}</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>{{sales.5}}</td>
+        </tr>
+        <tr>
+            <td>June</td>
+            <td>{{sales.6}}</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>{{sales.7}}</td>
+        </tr>
+        <tr>
+            <td>August</td>
+            <td>{{sales.8}}</td>
+        </tr>
+        <tr>
+            <td>September</td>
+            <td>{{sales.9}}</td>
+        </tr>
+        <tr>
+            <td>October</td>
+            <td>{{sales.10}}</td>
+        </tr>
+        <tr>
+            <td>November</td>
+            <td>{{sales.11}}</td>
+        </tr>
+        <tr>
+            <td>December</td>
+            <td>{{sales.0}}</td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+   <center><a href="return/"><input type="button" id="submit-button" class="neon-button" value="New Prediction"></a></center> 
+
+</body>
+</html>

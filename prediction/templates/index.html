@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Forecasting</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+  <h1 style="color: white;text-align: center;">Perrin Freres Champagne Sales Forecasting</h1>
+  <br><br>
+  <h2 style="color: white;text-align: center;">Enter Years Between 1974 to 2250</h2>
+  <br><br>
+
+  <form action="predict/" method="post">
+  <div class="neon-container">
+    {% csrf_token %}
+    <input type="number"  class="neon-input" placeholder="Years Between 1974 to 3000" name="year">
+    <input type="submit" class="neon-button" value="Predict">
+</div>
+</form>
+<br><br>
+
+<h1 style="color: white;text-align: center;">Future Sales Forecasting</h1>
+<br><br>
+
+<center><img src="{%static 'images/plot.png '%}" alt=""></center>
+</body>
+</html>

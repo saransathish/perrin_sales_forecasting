@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: black;
+}
+body {
+  background-color: #111;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.neon-container {
+  text-align: center;
+}
+
+.neon-input,
+.neon-button {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.neon-input:hover,
+.neon-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ff55, 0 0 20px #00ff55, 0 0 30px #00ff55;
+}
+table {
+  color: white;
+  width: 300px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+th{
+  background-color: #00ff55;
+}
+th, td {
+  border: 1px solid #ccc;
+  color: whitesmoke;
+  padding: 10px;
+  text-align: center;
+}
+
+/* th {
+  background-color: #f2f2f2;
+} */
+
+tr:nth-child(even) {
+  color: #111;
+  /* background-color: #f2f2f2; */
+  
+}
+
+tr:hover {
+  background-color:#00ff55;
+}
